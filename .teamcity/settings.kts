@@ -35,6 +35,8 @@ project {
 object Build : BuildType({
     name = "Build"
 
+    artifactRules = "target/*.jar => plaindoll.jar"
+
     vcs {
         root(DslContext.settingsRoot)
     }
