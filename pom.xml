@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd  ">
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>org.netology</groupId>
@@ -12,12 +12,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	<distributionManagement>
-		<repository>
-				<id>nexus</id>
-				<url>http://51.250.13.64:8081/repository/maven-releases</url>
-		</repository>
-	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -52,17 +47,18 @@
 		</plugins>
 	</build>
 	
-<distributionManagement>
-    <repository>
-      <id>nexus-releases</id>
-      <name>Nexus Releases Repository</name>
-      <url>http://93.77.180.190:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <name>Nexus Snapshots Repository</name>
-      <url>http://93.77.180.190:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Releases Repository</name>
+			<url>http://93.77.180.190:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshots Repository</name>
+			<url>http://93.77.180.190:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 	
 </project>
